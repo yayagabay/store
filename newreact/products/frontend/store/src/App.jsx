@@ -7,7 +7,7 @@ import NotFound from "./components/NotFound";
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import PrivateRoute from "./components/PrivateRoute";
-import "./app.css";
+import "./App.css";
 import alpacaimg from "./assets/alpaca.png";
 import Register from "./components/Register";
 import Chat from "./components/Chat";

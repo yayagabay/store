@@ -38,7 +38,21 @@ function App() {
       <BrowserRouter>
         <CartProvider>
           <div className="app">
-            <h1>My Store</h1>
+              <img
+              src={alpacaimg}
+              alt="alpaca"
+              style={{
+                width: "150px",
+                height: "150px",
+                borderRadius: "12px",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+                objectFit: "cover",
+                marginBottom: "10px",
+                border: '5px dashed black'
+              }}
+            />
+
+
             <nav>
               <Link className="routes" to="/">
                 <FontAwesomeIcon icon={faHouse} />
@@ -56,21 +70,6 @@ function App() {
                 <FontAwesomeIcon icon={faCashRegister} />
               </Link>
             </nav>
-
-              <img
-              src={alpacaimg}
-              alt="alpaca"
-              style={{
-                width: "150px",
-                height: "150px",
-                borderRadius: "12px",
-                boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-                objectFit: "cover",
-                marginBottom: "10px",
-                border: '5px dashed black'
-              }}
-            />
-
 
             <Switch>
               <Route exact path="/" component={Home} />

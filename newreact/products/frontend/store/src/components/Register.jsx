@@ -46,7 +46,7 @@ export default function Register() {
   };
 
   return (
-    <div style={{ padding: '2rem', maxWidth: '400px', margin: 'auto' }}>
+    <div style={{ maxWidth: '400px', margin: 'auto' }}>
       <h2>Register</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -64,7 +64,7 @@ export default function Register() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Register</button>
+        <button style={{marginBottom:'1rem'}} type="submit">Register</button>
       </form>
     </div>
   );

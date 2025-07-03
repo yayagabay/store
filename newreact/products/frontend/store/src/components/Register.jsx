@@ -64,7 +64,7 @@ export default function Register() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button style={{marginBottom:'1rem'}} type="submit">Register</button>
+        <button style={{backgroundColor: 'rgb(255 0 213)',marginBottom:'1rem'}} type="submit">Register</button>
       </form>
     </div>
   );

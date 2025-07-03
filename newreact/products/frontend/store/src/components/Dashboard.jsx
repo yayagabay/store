@@ -50,8 +50,8 @@ export default function Dashboard() {
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {!error && (
         <>
-          <p>Welcome, {username}!</p>
-          <button onClick={handleLogout}>Logout</button>
+          <p>Welcome, <span style={{fontWeight:'bold'}}>{username}!</span></p>
+          <button className='logout' onClick={handleLogout}>Logout</button>
 
           <nav className='navFont' style={{ margin: '1rem 0' }}>
             <Link className='icon' to={`${url}/products`} style={{ marginRight: '1rem' }}>

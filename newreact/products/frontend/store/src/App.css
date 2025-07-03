@@ -19,7 +19,9 @@ body{
   color:orangered;
   border-bottom: 4px solid orangered;
 }
-
+.logout{
+  background-color: #fffd98;
+}
 .navFont{
   font-size:20px;
     border-radius: 25px;

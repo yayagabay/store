@@ -68,7 +68,7 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button style={{marginBottom:'1rem'}} type="submit">Login</button>
+        <button style={{backgroundColor: '#ff3100', marginBottom:'1rem'}} type="submit">Login</button>
       </form>
     </div>
   );

@@ -101,7 +101,8 @@ export default function AllProducts() {
                   height: '150px',
                   objectFit: 'cover',
                   borderRadius: '4px',
-                  marginBottom: '0.5rem'
+                  marginBottom: '0.5rem',
+                  border:'5px dashed aqua'
                 }}
               />
               <h4>{p.name}</h4>

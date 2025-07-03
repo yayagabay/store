@@ -173,7 +173,7 @@ export default function Products() {
               <img
                 src={p.image && p.image.startsWith('http') ? p.image : placeholderImage}
                 alt={p.name}
-                style={{ width: '100%', height: '150px', objectFit: 'cover', borderRadius: '4px', marginBottom: '0.5rem' }}
+                style={{ width: '100%', height: '150px', objectFit: 'cover',border:'5px dashed aqua', borderRadius: '4px', marginBottom: '0.5rem' }}
               />
               <h4>{p.name}</h4>
               <p>{p.description}</p>

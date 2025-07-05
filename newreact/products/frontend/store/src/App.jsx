@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 import Products from "./components/products/Products";
 import Todos from "./components/todos/Todos";
@@ -14,7 +14,7 @@ import Chat from "./components/Chat";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import PaymentPage from "./components/PaymentPage.jsx";
-import { CartProvider } from './context/CartContext.jsx';
+import { CartProvider } from "./context/CartContext.jsx";
 
 // ✅ Font Awesome Imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,7 +28,25 @@ const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
 const Home = () => (
   <div>
     <h2>Welcome to Yair's Store</h2>
-    <p>Explore our products using the navigation bar above.</p>
+    <p>
+      {" "}
+      <button
+        style={{ backgroundColor: "#ff3100"}}
+        type="submit"
+      >
+        Login 
+      </button> 
+       {" "}OR{" "}
+
+                    <Link to="/register">
+      <button
+        style={{ backgroundColor: "rgb(255 0 213)"}}
+        type="submit"
+      >
+        Register
+      </button>              </Link>
+    </p>
+    <Login />
   </div>
 );
 
@@ -38,7 +56,7 @@ function App() {
       <BrowserRouter>
         <CartProvider>
           <div className="app">
-              <img
+            <img
               src={alpacaimg}
               alt="alpaca"
               style={{
@@ -48,10 +66,9 @@ function App() {
                 boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                 objectFit: "cover",
                 marginBottom: "10px",
-                border: '5px dashed black'
+                border: "5px dashed black",
               }}
             />
-
 
             <nav>
               <Link className="routes" to="/">
@@ -66,7 +83,7 @@ function App() {
                 <FontAwesomeIcon icon={faKey} />
               </Link>{" "}
               |
-              <Link className="routes" to="/register">
+              <Link className="registerBtn" to="/register">
                 <FontAwesomeIcon icon={faCashRegister} />
               </Link>
             </nav>

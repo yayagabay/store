@@ -58,18 +58,15 @@ export default function Dashboard() {
             <FontAwesomeIcon icon={faBagShopping} />
             </Link>
             <Link className='icon' to={`${url}/all-products`} style={{ marginRight: '1rem' }}>
-            <FontAwesomeIcon icon={faGlobe} />
+            <FontAwesomeIcon icon={faShop} />
             </Link>
             <Link className='icon' to={`${url}/chat`} style={{ marginRight: '1rem' }}>
             <FontAwesomeIcon icon={faMessage} />
             </Link>
             <Link className='icon' to={`${url}/cart`}>
-            <FontAwesomeIcon icon={faShop} /> 
-            </Link> | 
-            <Link className='icon' to={`${url}/payment`}>
             <FontAwesomeIcon icon={faCartShopping} /> 
             </Link>
-            <br/>   
+            {" | "} 
             {username === 'admin' && (
               <Link className='icon' to={`${url}/todos`} style={{ marginRight: '1rem' }}> 
             <FontAwesomeIcon icon={faList} />

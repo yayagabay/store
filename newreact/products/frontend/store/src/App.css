@@ -12,6 +12,10 @@ body{
   font-size:25px;
   color:orangered;
 }
+.registerBtn{
+  font-size:25px;
+  color:rgb(255, 0, 213);
+}
 .routes:hover {
   border-radius: 25px;
   padding:5px;
@@ -25,6 +29,9 @@ body{
 .navFont{
   font-size:20px;
     border-radius: 25px;
+}
+button:hover{
+  opacity:0.7;
 }
 .icon{
   color:#4100ff;

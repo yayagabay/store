@@ -113,7 +113,9 @@ export default function AllProducts() {
                 <span
                   style={{
                     color: p.owner?.username === 'admin' ? 'red' : 'inherit',
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    textDecoration: 'underline',
+                    cursor:'pointer'
                   }}
                 >
                   {p.owner?.username || 'Unknown'}
